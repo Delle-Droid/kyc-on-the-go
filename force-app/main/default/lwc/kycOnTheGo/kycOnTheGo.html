@@ -1,0 +1,8 @@
+<template>
+    <template if:true={displayOptions.stageOne}>
+        <c-account-screen onvalidate={handleValidate} ></c-account-screen>
+    </template>
+    <template if:true={displayOptions.stageTwo}>
+        <c-document-list onafterselection={handleAfterRowSelection}></c-document-list>
+    </template>
+</template>
